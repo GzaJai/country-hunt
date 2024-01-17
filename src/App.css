@@ -1,0 +1,171 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100dvw;
+  height: 10dvh;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 3rem;
+}
+
+header ion-icon {
+  color: rgb(255, 70, 70);
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.7rem;
+}
+.score-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 50dvw;
+  height: 35rem;
+  background-color: #999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.main-container-wrong {
+  background-color: rgb(255, 70, 70);
+}
+
+.main-container-right {
+  background-color: rgb(70, 255, 116);
+}
+
+.score-div {
+  margin: 0 auto;
+  width: 40%;
+}
+.score-div h2 {
+  font-size: 2rem;
+}
+.score-div span {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.img-container {
+  margin: 0 auto;
+  height: 40%;
+  width: 60%;
+}
+.country-flag {
+  object-fit: fill;
+  margin: 1rem auto 3rem;
+}
+
+.button-container {
+  display: flex;
+  flex-grow: 1;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.option-button {
+  height: max-content;
+}
+
+.result-div {
+  width: 40%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: #333;
+  border-radius: .5rem;
+}
+
+.result-div p {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 1rem;
+}
+
+.modal-layout {
+  background-color: #0000005d;
+  height: 100dvh;
+  width: 100dvw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-div {
+  background-color: rgb(255, 70, 70);
+  width: 60%;
+  height: 60%;
+  border-radius: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close-info-btn {
+  position: fixed;
+  top: 23.5dvh;
+  right: 22dvw;
+
+}
+
+.info-div h3{
+  font-size: 4rem;
+}
+.info-div ul li {
+  font-size: 1.6rem;
+  list-style: disc;
+}
+
+.info-div p {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
