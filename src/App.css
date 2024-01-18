@@ -231,4 +231,14 @@ h2 {
     margin: 10dvh 0 0;
     padding: 0 3rem;
   }
+  .info-div h3 {
+    font-size: 2.5rem;
+  }
+  .close-info-btn {
+    top: 20dvh;
+    right: 12dvw;
+  }
+  .info-div p {
+    font-size: 2rem;
+  }
 }
