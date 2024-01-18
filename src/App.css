@@ -225,4 +225,10 @@ h2 {
     font-size: 2rem;
     display: block;
   }
+  .info-div {
+    width: 70%;
+    height: 80%;
+    margin: 10dvh 0 0;
+    padding: 0 3rem;
+  }
 }
