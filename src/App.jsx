@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Game from "./Game";
 import InfoModal from "./components/InfoModal";
+import MoreInfo from "./components/MoreInfo";
 
 function MiComponente() {
   const [score, setScore] = useState(0);
@@ -28,13 +29,16 @@ function MiComponente() {
         <h1>COUNTRY HUNT</h1> <ion-icon name="add-circle"></ion-icon>
       </header>
       <div className="score-div">
-        <div className="score-info">
-          <h2>Your score</h2>
-          <button className="info-btn" onClick={handleShowModal}>
-            <ion-icon name="information-circle"></ion-icon>
-          </button>
+        <div>
+          <div className="score-info">
+            <h2>Your score</h2>
+            <button className="info-btn" onClick={handleShowModal}>
+              <ion-icon name="information-circle"></ion-icon>
+            </button>
+          </div>
+          <span className="score">{score}</span>
         </div>
-        <span className="score">{score}</span>
+        <MoreInfo></MoreInfo>
       </div>
       <Game incrementScore={incrementScore} decrementScore={decrementScore}></Game>
       {showModal && 
