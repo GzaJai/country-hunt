@@ -6,6 +6,7 @@ const MoreInfo = () => {
         <div>
             <h4>
                 Made by 
+                <br />
                 <span>
                     Gonzalo Jaime
                 </span>
