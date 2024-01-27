@@ -7,7 +7,7 @@ function Game({ incrementScore, decrementScore }) {
   const [correctAnswer, setCorrectAnswer] = useState(false);
   const [mainContainerClass, setMainContainerClass] =
     useState("main-container");
-    const [newGame, setNewGame] = useState(true)
+  const [newGame, setNewGame] = useState(true)
 
   useEffect(() => {
     if (apiData == null) {
@@ -26,11 +26,15 @@ function Game({ incrementScore, decrementScore }) {
     setNewGame(false)
     if (answer == option) {
       setCorrectAnswer(true);
-      incrementScore();
+      if (newGame == true) {
+        incrementScore();
+      }
       setMainContainerClass("main-container main-container-right");
     } else {
       setCorrectAnswer(false);
-      decrementScore();
+      if (newGame == true) {
+        decrementScore();
+      }
       setMainContainerClass("main-container main-container-wrong");
     }
   };
