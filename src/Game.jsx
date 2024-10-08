@@ -16,10 +16,11 @@ function Game({ incrementScore, decrementScore }) {
   }, []);
 
   const nextQuiz = () => {
-    fetchData(setApiData);
+    setApiData(null); // Reset the apiData state before fetching new data
     setCorrectAnswer(false);
-    setNewGame(true)
+    setNewGame(true);
     setMainContainerClass("main-container");
+    fetchData(setApiData); // Fetch new data after resetting
   };
 
   const checkAnswer = (answer, option) => {
@@ -51,7 +52,7 @@ function Game({ incrementScore, decrementScore }) {
             <button
               className="option-button"
               key={option}
-              onClick={() => checkAnswer(apiData.answer, option)}
+              onClick={() => checkAnswer(apiData.correct_answer, option)}
             >
               {option}
             </button>
