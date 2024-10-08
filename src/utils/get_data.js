@@ -1,5 +1,5 @@
 export const fetchData = (stateSetter) => {
-  fetch('https://shadify.dev/api/countries/country-quiz')
+  fetch('https://country-hunt-api.vercel.app/')
   .then(res => {
     return res.json();
   })
